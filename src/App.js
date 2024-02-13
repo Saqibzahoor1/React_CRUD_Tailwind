@@ -2,7 +2,6 @@
 import { useEffect, useState } from 'react';
 import './App.css';
 import { data } from './employee';
-import Mainpage from './Mainpage';
 function App() {
   const [alldata, setAlldata] = useState([]);
   const [firstname, setFirstname] = useState('');
@@ -151,7 +150,7 @@ function App() {
       </div>
 
 
-<Mainpage></Mainpage>
+
 
 
 
