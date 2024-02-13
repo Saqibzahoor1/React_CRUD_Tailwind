@@ -1,0 +1,20 @@
+ export const data=[
+    {
+        id:1,
+        firstName:"faheem",
+        lastName:"Bhat",
+        age:20
+    },
+    {
+        id:2,
+        firstName:"Athar",
+        lastName:"jan",
+        age:25
+    },
+    {
+        id:3,
+        firstName:"Adil",
+        lastName:"jan",
+        age:22
+    }
+]
