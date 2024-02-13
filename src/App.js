@@ -2,6 +2,9 @@
 import { useEffect, useState } from 'react';
 import './App.css';
 import { data } from './employee';
+import { BrowserRouter, Routes,Route ,Link} from 'react-router-dom';
+import About from './About';
+import Home from './Home';
 function App() {
   const [alldata, setAlldata] = useState([]);
   const [firstname, setFirstname] = useState('');
@@ -151,7 +154,15 @@ function App() {
 
 
 
+      <BrowserRouter>
+        <Link to="/about">About Us</Link> {/* Use Link component for navigation */}
+        <Link to="/">Home</Link> {/* Use Link component for navigation */}
 
+        <Routes>
+          <Route path="/about" element={<About />} /> {/* Use proper path */}
+          <Route path="/" element={<Home />} /> {/* Use proper path */}
+        </Routes>
+      </BrowserRouter>
 
 
 
