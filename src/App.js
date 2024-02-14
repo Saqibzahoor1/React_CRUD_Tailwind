@@ -2,9 +2,12 @@
 import { useEffect, useState } from 'react';
 import './App.css';
 import { data } from './employee';
-import { BrowserRouter, Routes,Route ,Link} from 'react-router-dom';
+import { BrowserRouter, Routes,Route } from 'react-router-dom';
 import About from './About';
 import Home from './Home';
+import Contact from './Contact';
+import Header from './Header';
+import Adduser from './Adduser';
 function App() {
   const [alldata, setAlldata] = useState([]);
   const [firstname, setFirstname] = useState('');
@@ -155,12 +158,14 @@ function App() {
 
 
       <BrowserRouter>
-        <Link to="/about">About Us</Link> {/* Use Link component for navigation */}
-        <Link to="/">Home</Link> {/* Use Link component for navigation */}
-
+      
+<Header></Header>
         <Routes>
-          <Route path="/about" element={<About />} /> {/* Use proper path */}
-          <Route path="/" element={<Home />} /> {/* Use proper path */}
+        <Route path="/" element={<Home />} /> 
+          <Route path="/about" element={<About />} /> 
+          <Route path='/contact' element={<Contact/>}/>
+          <Route path='/adduser' element={<Adduser/>}/>
+          
         </Routes>
       </BrowserRouter>
 
