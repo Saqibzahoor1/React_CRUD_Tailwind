@@ -8,6 +8,7 @@ import Home from './Home';
 import Contact from './Contact';
 import Header from './Header';
 import Adduser from './Adduser';
+import Editusers from './Editusers';
 function App() {
   const [alldata, setAlldata] = useState([]);
   const [firstname, setFirstname] = useState('');
@@ -165,6 +166,7 @@ function App() {
           <Route path="/about" element={<About />} /> 
           <Route path='/contact' element={<Contact/>}/>
           <Route path='/adduser' element={<Adduser/>}/>
+          <Route path='/edituser/:id' element={<Editusers/>}/>
           
         </Routes>
       </BrowserRouter>

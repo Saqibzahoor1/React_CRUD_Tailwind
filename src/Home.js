@@ -49,7 +49,7 @@ return(
     <td class="px-6 py-4">{item.username}</td>
     <td class="px-6 py-4">{item.email}</td>
     <td class="px-6 py-4">{item.phone}</td>
-    <td class="px-6 py-4"><Link to="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline px-2">Edit</Link><Link to="#" class="font-medium text-green-600 dark:text-blue-500 hover:underline px-2">view</Link>
+    <td class="px-6 py-4"><Link to={`/edituser ${item.id}`} class="font-medium text-blue-600 dark:text-blue-500 hover:underline px-2">Edit</Link><Link to="#" class="font-medium text-green-600 dark:text-blue-500 hover:underline px-2">view</Link>
     <Link to="#" class="font-medium text-red-600 dark:text-blue-500 hover:underline">Delete</Link></td>
   </tr>
 )
